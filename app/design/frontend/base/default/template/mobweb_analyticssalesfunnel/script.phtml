@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	Checkout.prototype.gotoSection = Checkout.prototype.gotoSection.wrap(function(parentMethod, section, reloadProgressBlock) {
+		parentMethod(section, reloadProgressBlock);
+		var _gaq = _gaq || [];
+		try {
+			_gaq.push(['_trackPageview', '<?php echo $this->getUrl('checkout/onepage'); ?>' + section + '/']);
+			console.log('<?php echo $this->getUrl('checkout/onepage'); ?>' + section + '/');
+		} catch(err) {}
+	});
+</script>

@@ -1,0 +1,7 @@
+app/code/community/MobWeb/AnalyticsSalesFunnel app/code/community/MobWeb/AnalyticsSalesFunnel/
+app/design/frontend/base/default/layout/mobweb_analyticssalesfunnel.xml app/design/frontend/base/default/layout/mobweb_analyticssalesfunnel.xml
+app/design/frontend/base/default/template/mobweb_analyticssalesfunnel/script.phtml app/design/frontend/base/default/template/mobweb_analyticssalesfunnel/script.phtml
+app/etc/modules/MobWeb_AnalyticsSalesFunnel.xml app/etc/modules/MobWeb_AnalyticsSalesFunnel.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

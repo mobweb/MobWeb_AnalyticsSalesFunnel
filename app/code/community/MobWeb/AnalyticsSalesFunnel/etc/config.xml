@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MobWeb_AnalyticsSalesFunnel>
+            <version>0.0.1</version>
+        </MobWeb_AnalyticsSalesFunnel>
+    </modules>
+    <global>
+        <helpers>
+            <mobweb_analyticssalesfunnel>
+                <class>MobWeb_AnalyticsSalesFunnel_Helper</class>
+            </mobweb_analyticssalesfunnel>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <mobweb_analyticssalesfunnel>
+                    <file>mobweb_analyticssalesfunnel.xml</file>
+                </mobweb_analyticssalesfunnel>
+            </updates>
+        </layout>
+    </frontend>
+</config>
