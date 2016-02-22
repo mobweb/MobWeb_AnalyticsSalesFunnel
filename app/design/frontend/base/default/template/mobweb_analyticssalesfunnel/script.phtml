@@ -1,7 +1,7 @@
 <script type="text/javascript">
 	Checkout.prototype.gotoSection = Checkout.prototype.gotoSection.wrap(function(parentMethod, section, reloadProgressBlock) {
 		parentMethod(section, reloadProgressBlock);
-		var ga = ga || function() {};
+		var ga = window.ga || function() {};
 		try {
 			ga('send', 'pageview', '<?php echo '/' . str_replace(Mage::getBaseUrl(), '', $this->getUrl('checkout/onepage')); ?>' + section + '/');
 		} catch(err) {}
